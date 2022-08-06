@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <!--=------------------------------------=-->
+    <!-- Disable caching for testing purposes -->
+    <!--=------------------------------------=-->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <!-- end -->
+  </head>
+<body>
+<!-- Note: styling applies to the visible canvas size. The width and height parameters affect the buffer size. -->
+<canvas width="800px" height="600px" style='display:block; margin:auto; width:880px; height:660px; border:1px solid black;' id="webgpu_canvas" oncontextmenu="return false;" tabindex=-1></canvas>
+<canvas width="800px" height="50px" style='display:block; margin:auto; width:800px; height:50px; border:1px solid black;' id="hidden_canvas"></canvas>
+
+<div id="lunar-editor" style="width: 880px; height: 400px; border: 1px solid #ccc; margin:auto; display:none;"></div>
+<div id="vim-status" style="width: 880px; height: 25px; margin:auto; display:none;"></div>
+<script src="./monaco/app.bundle.js"></script>
+<script async type="text/javascript" src="index.js"></script>
+</body>
+</html>
+
+
