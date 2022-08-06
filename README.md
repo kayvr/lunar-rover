@@ -16,6 +16,20 @@ Type 'tutor' and hit enter. You'll be guided through the process of browsing the
 
 # Build Instructions
 
-The source for the Electron application wrapping Rover's C++ WASM binary is provided in this repo. So only node.js is required to build.
+Install node.js. Currently, Lunar Rover is built using node version v16.15.1.
 
-A fairly recent version of node is also required as Rover makes extensive use of WebGPU. Currently, Lunar Rover is built using node version v16.15.1.
+* npm install
+* npm run make
+
+Or just use `npm start` to run the code in-place without building a binary.
+
+Note that the core of Lunar Rover is a C++ WASM module that uses WebGPU. This WASM module is pre-built and included inside this repository.
+
+## Rebuilding package.json from scratch
+
+* npm init
+* npm install electron
+* npm install @electron-forge/cli
+* npx electron-forge import
+
+

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <style>
+      canvas { width: 800px; height: 600px; border: 1px solid black; }
+    </style>
+  </head>
+<body>
+<canvas style='display:block; margin:auto;' id='canv'></canvas>
+<script>
+  var canvas = document.getElementById("canv");
+  var ctx = canvas.getContext('2d');
+  Ctx.font = '48px serif';
+  ctx.fillText('Hello world', 10, 40); // Render user input onto the canvas. Once command is accepted, then send to WebGPU?
+          // document.getElementById("btn-alert").addEventListener("click", function(){
+          //               var value=user_name.value.trim();
+          //               if(!value)
+          //                     alert("Name Cannot be empty!");
+          //               else
+          //                     alert("Hello, " + value + "!\nGreetings From GeeksforGeeks.");
+          //           });
+          // })
+</script>
+</body>
+</html>
