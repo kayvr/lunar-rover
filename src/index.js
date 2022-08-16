@@ -38,7 +38,7 @@ var Module = typeof Module != 'undefined' ? Module : {};
         // web worker
         PACKAGE_PATH = encodeURIComponent(location.pathname.toString().substring(0, location.pathname.toString().lastIndexOf('/')) + '/');
       }
-      var PACKAGE_NAME = './live/debug/index.data';
+      var PACKAGE_NAME = './live/release/index.data';
       var REMOTE_PACKAGE_BASE = 'index.data';
       if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
         Module['locateFile'] = Module['locateFilePackage'];
@@ -173,10 +173,10 @@ Module['FS_createPath']("/", "fonts", true, true);
           var files = metadata['files'];
           for (var i = 0; i < files.length; ++i) {
             DataRequest.prototype.requests[files[i].filename].onload();
-          }          Module['removeRunDependency']('datafile_./live/debug/index.data');
+          }          Module['removeRunDependency']('datafile_./live/release/index.data');
 
       };
-      Module['addRunDependency']('datafile_./live/debug/index.data');
+      Module['addRunDependency']('datafile_./live/release/index.data');
 
       if (!Module.preloadResults) Module.preloadResults = {};
 
@@ -197,7 +197,7 @@ Module['FS_createPath']("/", "fonts", true, true);
     }
 
     }
-    loadPackage({"files": [{"filename": "/assets/vt220-font.png", "start": 0, "end": 9374}, {"filename": "/assets/satellite-16x16_01_Island.png", "start": 9374, "end": 9717}, {"filename": "/assets/lunar-home/tutorial-", "start": 9717, "end": 10338}, {"filename": "/assets/lunar-home/tutorial/.md-", "start": 10338, "end": 10382}, {"filename": "/assets/lunar-home/tutorial/offline.gmi-", "start": 10382, "end": 10909}, {"filename": "/assets/lunar-home/tutorial/gemini.gmi-", "start": 10909, "end": 11762}, {"filename": "/assets/lunar-home/tutorial/backlog.gmi-", "start": 11762, "end": 12289}, {"filename": "/assets/lunar-home/tutorial/subscribe-to-me.gmi-", "start": 12289, "end": 12750}, {"filename": "/assets/lunar-home/tutorial/subs.gmi-", "start": 12750, "end": 13192}, {"filename": "/assets/lunar-home/tutorial/offline.gmi/.md-", "start": 13192, "end": 13245}, {"filename": "/assets/lunar-home/tutorial/backlog.gmi/.md-", "start": 13245, "end": 13298}, {"filename": "/assets/lunar-home/tutorial/subs.gmi/.md-", "start": 13298, "end": 13351}, {"filename": "/assets/lunar-home/tutorial/gemini.gmi/.md-", "start": 13351, "end": 13406}, {"filename": "/assets/lunar-home/tutorial/subscribe-to-me.gmi/.md-", "start": 13406, "end": 13470}, {"filename": "/assets/lunar-home/tutorial/subscribe-to-me.gmi/subs-new-page.gmi-", "start": 13470, "end": 14277}, {"filename": "/assets/lunar-home/tutorial/subscribe-to-me.gmi/subs-nav-away.gmi-", "start": 14277, "end": 14799}, {"filename": "/assets/lunar-home/tutorial/subscribe-to-me.gmi/subs-nav-away.gmi/.md-", "start": 14799, "end": 14881}, {"filename": "/assets/lunar-home/tutorial/subscribe-to-me.gmi/subs-new-page.gmi/.md-", "start": 14881, "end": 14963}, {"filename": "/fonts/Roboto-Medium.ttf", "start": 14963, "end": 177551}, {"filename": "/fonts/binary_to_compressed_c.cpp", "start": 177551, "end": 190927}, {"filename": "/fonts/ProggyClean.ttf", "start": 190927, "end": 232135}, {"filename": "/fonts/Karla-Regular.ttf", "start": 232135, "end": 248983}, {"filename": "/fonts/Cousine-Regular.ttf", "start": 248983, "end": 292895}, {"filename": "/fonts/ProggyTiny.ttf", "start": 292895, "end": 328551}, {"filename": "/fonts/DroidSans.ttf", "start": 328551, "end": 518595}], "remote_package_size": 518595, "package_uuid": "029e956c-1c81-491d-8300-247db2c9ad72"});
+    loadPackage({"files": [{"filename": "/assets/vt220-font.png", "start": 0, "end": 9374}, {"filename": "/assets/satellite-16x16_01_Island.png", "start": 9374, "end": 9717}, {"filename": "/assets/lunar-home/tutorial-", "start": 9717, "end": 10151}, {"filename": "/assets/lunar-home/tutorial/.md-", "start": 10151, "end": 10195}, {"filename": "/assets/lunar-home/tutorial/offline.gmi-", "start": 10195, "end": 10722}, {"filename": "/assets/lunar-home/tutorial/gemini.gmi-", "start": 10722, "end": 11575}, {"filename": "/assets/lunar-home/tutorial/backlog.gmi-", "start": 11575, "end": 12102}, {"filename": "/assets/lunar-home/tutorial/subscribe-to-me.gmi-", "start": 12102, "end": 12563}, {"filename": "/assets/lunar-home/tutorial/subs.gmi-", "start": 12563, "end": 13005}, {"filename": "/assets/lunar-home/tutorial/offline.gmi/.md-", "start": 13005, "end": 13058}, {"filename": "/assets/lunar-home/tutorial/backlog.gmi/.md-", "start": 13058, "end": 13111}, {"filename": "/assets/lunar-home/tutorial/subs.gmi/.md-", "start": 13111, "end": 13164}, {"filename": "/assets/lunar-home/tutorial/gemini.gmi/.md-", "start": 13164, "end": 13219}, {"filename": "/assets/lunar-home/tutorial/subscribe-to-me.gmi/.md-", "start": 13219, "end": 13283}, {"filename": "/assets/lunar-home/tutorial/subscribe-to-me.gmi/subs-new-page.gmi-", "start": 13283, "end": 14090}, {"filename": "/assets/lunar-home/tutorial/subscribe-to-me.gmi/subs-nav-away.gmi-", "start": 14090, "end": 14612}, {"filename": "/assets/lunar-home/tutorial/subscribe-to-me.gmi/subs-nav-away.gmi/.md-", "start": 14612, "end": 14694}, {"filename": "/assets/lunar-home/tutorial/subscribe-to-me.gmi/subs-new-page.gmi/.md-", "start": 14694, "end": 14776}, {"filename": "/fonts/Roboto-Medium.ttf", "start": 14776, "end": 177364}, {"filename": "/fonts/binary_to_compressed_c.cpp", "start": 177364, "end": 190740}, {"filename": "/fonts/ProggyClean.ttf", "start": 190740, "end": 231948}, {"filename": "/fonts/Karla-Regular.ttf", "start": 231948, "end": 248796}, {"filename": "/fonts/Cousine-Regular.ttf", "start": 248796, "end": 292708}, {"filename": "/fonts/ProggyTiny.ttf", "start": 292708, "end": 328364}, {"filename": "/fonts/DroidSans.ttf", "start": 328364, "end": 518408}], "remote_package_size": 518408, "package_uuid": "85fc86d4-2ca7-401d-843f-693e52795052"});
 
   })();
 
@@ -1853,10 +1853,6 @@ function glue_preint(){ var entry = __glue_main_; if (entry) { if (navigator["gp
       var js = jsStackTrace();
       if (Module['extraStackTrace']) js += '\n' + Module['extraStackTrace']();
       return demangleAll(js);
-    }
-
-  function ___assert_fail(condition, filename, line, func) {
-      abort('Assertion failed: ' + UTF8ToString(condition) + ', at: ' + [filename ? UTF8ToString(filename) : 'unknown filename', line, func ? UTF8ToString(func) : 'unknown function']);
     }
 
   var PATH = {splitPath:function(filename) {
@@ -7019,6 +7015,24 @@ function glue_preint(){ var entry = __glue_main_; if (entry) { if (navigator["gp
     WebGPU.mgrPipelineLayout.release(id);
   }
 
+  function _wgpuQueueOnSubmittedWorkDone(queueId, signalValue_low, signalValue_high, callback, userdata) {
+      var queue = WebGPU.mgrQueue.get(queueId);
+      assert(signalValue_low === 0 && signalValue_high === 0, 'signalValue not supported, must be 0');
+  
+      
+      queue["onSubmittedWorkDone"]().then(function() {
+        
+        callUserCallback(function() {
+          getWasmTableEntry(callback)(0, userdata);
+        });
+      }, function() {
+        
+        callUserCallback(function() {
+          getWasmTableEntry(callback)(1, userdata);
+        });
+      });
+    }
+
   function _wgpuQueueSubmit(queueId, commandCount, commands) {
       assert(commands % 4 === 0);
       var queue = WebGPU.mgrQueue.get(queueId);
@@ -7459,7 +7473,6 @@ function checkIncomingModuleAPI() {
   ignoredModuleProp('fetchSettings');
 }
 var asmLibraryArg = {
-  "__assert_fail": ___assert_fail,
   "__syscall_chmod": ___syscall_chmod,
   "__syscall_dup3": ___syscall_dup3,
   "__syscall_fchmod": ___syscall_fchmod,
@@ -7560,6 +7573,7 @@ var asmLibraryArg = {
   "wgpuDeviceGetQueue": _wgpuDeviceGetQueue,
   "wgpuInstanceCreateSurface": _wgpuInstanceCreateSurface,
   "wgpuPipelineLayoutRelease": _wgpuPipelineLayoutRelease,
+  "wgpuQueueOnSubmittedWorkDone": _wgpuQueueOnSubmittedWorkDone,
   "wgpuQueueSubmit": _wgpuQueueSubmit,
   "wgpuQueueWriteBuffer": _wgpuQueueWriteBuffer,
   "wgpuQueueWriteTexture": _wgpuQueueWriteTexture,
@@ -7623,9 +7637,6 @@ var _capi_handle_async_gemini_response = Module["_capi_handle_async_gemini_respo
 var _capi_save_editor = Module["_capi_save_editor"] = createExportWrapper("capi_save_editor");
 
 /** @type {function(...*):?} */
-var _capi_on_file_changed = Module["_capi_on_file_changed"] = createExportWrapper("capi_on_file_changed");
-
-/** @type {function(...*):?} */
 var _capi_save_execution_to_history = Module["_capi_save_execution_to_history"] = createExportWrapper("capi_save_execution_to_history");
 
 /** @type {function(...*):?} */
@@ -7642,6 +7653,9 @@ var _capi_mouse_wheel = Module["_capi_mouse_wheel"] = createExportWrapper("capi_
 
 /** @type {function(...*):?} */
 var _capi_mouse_out = Module["_capi_mouse_out"] = createExportWrapper("capi_mouse_out");
+
+/** @type {function(...*):?} */
+var _capi_on_file_changed = Module["_capi_on_file_changed"] = createExportWrapper("capi_on_file_changed");
 
 /** @type {function(...*):?} */
 var _capi_control_v = Module["_capi_control_v"] = createExportWrapper("capi_control_v");
